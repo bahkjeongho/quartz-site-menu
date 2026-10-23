@@ -1,0 +1,27 @@
+// 색은 Quartz 변수를 쓴다: 현재 구역만 --darkgray(본문색), 나머지는 --gray(muted).
+.site-menu {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+
+  .site-menu__link {
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    color: var(--gray);
+
+    &:hover,
+    &.is-current {
+      color: var(--darkgray);
+    }
+  }
+}
